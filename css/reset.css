@@ -1,0 +1,107 @@
+/* reset.css
+   Basado y adaptado en el "Modern CSS Reset" de Andy Bell
+   https://andy-bell.co.uk/notes/modern-css-reset/
+   Objetivo: establecer una base consistente, accesible y predecible
+*/
+
+/* Box sizing: make width/height include padding and border */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Core defaults for html and body */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+  line-height: 1.15; /* sensible default line-height */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  background: transparent;
+  color: inherit;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+}
+
+/* Make images and media scale nicely */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Remove default button styles where useful */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Links inherit color by default; leave decoration to author */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Remove list styles on ul/ol when role=list is used */
+ul[role='list'], ol[role='list'] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default quote styles */
+blockquote, q {
+  quotes: none;
+}
+blockquote::before, blockquote::after, q::before, q::after {
+  content: '';
+  content: none;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Visible focus for keyboard users (use :focus-visible when supported) */
+:where(:focus) {
+  outline: 2px solid Highlight;
+  outline-offset: 2px;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility: ensure form elements don't overflow their containers by default */
+input, textarea, select, button {
+  max-width: 100%;
+}
+
+/* Provide a sensible default for root-level headings spacing (authors can override) */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  line-height: 1.25;
+}
+
+/* Small print */
+/* This reset is intentionally minimal and opinionated in a few places.
+   It's adapted for this project; feel free to tweak rules to match design needs. */
