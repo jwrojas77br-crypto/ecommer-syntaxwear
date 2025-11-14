@@ -1,27 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SyntaxWear - Ecommerce</title>
+  <title>SyntaxWear - Tênis e Sneakers Online</title>
+
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/variables.css">
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/layout.css">
-</head>
-<body>
-  <!-- Skip link for accessibility 
-  <a class="skip-link" href="#main">Ir para o conteúdo principal</a>-->
 
-  <header class="site-header" role="banner">
+  <link rel="stylesheet" href="./css/components/header.css">
+</head>
+
+<body>
+  <header class="header" role="banner">
     <!-- Header: logo + navegação principal -->
     <!-- Logo -->
+    <h1 class="logo">
+      <a href="" title="SyntaxWear - Tênis e Sneakers Online">
+        <img src="./images/logo/logo.svg" alt="SyntaxWear - Tênis e Sneakers Online">
+      </a>
+    </h1>
+
     <!-- Nav -->
+    <nav class="nav-center" aria-label="Categoria Principais">
+      <ul>
+        <li><a href="#">Masculino</a></li>
+        <li><a href="#">Femenino</a></li>
+        <li><a href="#">Outlet</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu de ações (após o menu do centro) -->
+    <nav class="nav-right" aria-label="Ações do usuário">
+      <ul>
+        <li><a href="#">Nossas lojas</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li>
+          <a href="#" aria-label="Minha conta" title="Minha conta">
+            <!-- ícone de usuário -->
+            <img src="./images/icons/user.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Ajuda" title="Ajuda">
+            <!-- ícone de ajuda -->
+            <img src="./images/icons/help.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Carrinho" title="Carrinho">
+            <!-- ícone de carrinho -->
+            <img src="./images/icons/bag.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main id="main" class="site-main" role="main">
     <section id="hero" class="hero" aria-label="Seção hero">
-      <h1>titulo</h1>
+    
     </section>
 
     <section id="categories" class="categories" aria-label="Categorias de tênis">
@@ -38,4 +79,5 @@
   </footer>
 
 </body>
+
 </html>
